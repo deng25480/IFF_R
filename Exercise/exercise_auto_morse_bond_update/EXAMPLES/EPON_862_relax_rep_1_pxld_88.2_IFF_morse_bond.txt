@@ -1,0 +1,62 @@
+This is a saved .txt file for the print outs that appear when running auto_morse_bond v1.5 / 28 July 2023
+
+
+
+
+Bond length and bond type statistics and info:
+Bond order (BO) will let you know what type of bond the code determine to coeff was from atom types in bond. BO options:
+- single:   1
+- double:   2
+- triple:   3
+- aromatic: 1.5
+
+Parameters (parms) will let you know how the morse parms were found. parms options:
+- class2: coeff left as class2
+- user:   user defined values were inserted
+- code:   dissociation energy was set by the code and alpha was minized by the code
+----------------------------------------------------Bond type bond length statistics----------------------------------------------------
+Bond      Bond Type: atom 1-2 (element,ring,nb)        Bond       Bond    Bond Length   Bond Length     Bond Length     Bond Length  
+id     BO: 1, 2, 3, 0; parms: code, user, class2;     Count        r0      Average       Minimum         Maximum     Standard Deviation
+----------------------------------------------------------------------------------------------------------------------------------------
+1         C,0,4 - O,0,2  BO: 1.0  parms: file          635        1.42      1.4297       1.3371          1.5357          0.0289     
+2         C,0,4 - H,0,1  BO: N/A  parms: class2        635       1.101      1.1047       1.0002          1.2131          0.0304     
+3         C,0,4 - C,0,4  BO: 1.0  parms: file          1630       1.53      1.5442       1.4434          1.6648          0.0345     
+4         C,0,4 - O,0,2  BO: 1.0  parms: file          720        1.42      1.4309       1.3479          1.5234          0.0301     
+5         C,0,4 - C,6,3  BO: 1.0  parms: file          1080      1.501      1.5169       1.4298          1.6426          0.0315     
+6         C,0,4 - H,0,1  BO: N/A  parms: class2        4150      1.101      1.1061       1.0067          1.2345          0.0308     
+7         C,0,4 - N,0,3  BO: 1.0  parms: file          635        1.47      1.4897       1.3954          2.5606          0.0774     
+8         C,0,4 - C,3,4  BO: 1.0  parms: file           85        1.53      1.5417       1.4774          1.6619          0.0351     
+9         C,0,4 - H,0,1  BO: N/A  parms: class2        1620      1.101      1.1042       1.0217          1.2090          0.0294     
+10        C,0,4 - C,6,3  BO: 1.0  parms: file          180       1.501      1.5226       1.4531          1.6195          0.0332     
+11        C,3,4 - H,0,1  BO: N/A  parms: class2        255       1.101      1.1027       1.0341          1.1939          0.0297     
+12        C,3,4 - O,3,2  BO: 1.0  parms: file          170        1.42      1.4388       1.3356          1.5398          0.0311     
+13        C,3,4 - C,3,4  BO: 1.0  parms: file           85        1.53      1.4688       1.4181          1.5264          0.0263     
+14        C,6,3 - O,0,2  BO: N/A  parms: class2        720       1.3768     1.3833       1.3082          1.4732          0.0271     
+15        C,6,3 - C,6,3  BO: 1.5  parms: file          5400      1.417      1.3955       1.3099          1.6998          0.0295     
+16        C,6,3 - H,0,1  BO: N/A  parms: class2        3060      1.0982     1.1036       0.9961          1.2234          0.0291     
+17        C,6,3 - N,0,3  BO: N/A  parms: class2        360       1.3912     1.4336       1.3590          1.5885          0.0315     
+18        H,0,1 - N,0,3  BO: N/A  parms: class2         85       1.0012     1.0050       0.9479          1.0917          0.0263     
+19        H,0,1 - O,0,2  BO: N/A  parms: class2        635        0.96      0.9618       0.8860          1.0377          0.0238     
+
+
+
+New combinations of harmonic and morse bond coeffs:
+1 morse  85.5641  2.3  1.42
+2 class2  1.101  345  -691.89  844.6
+3 morse  82.6961  2.0  1.53
+4 morse  85.5641  2.3  1.42
+5 morse  82.6961  2.0  1.501
+6 class2  1.101  345  -691.89  844.6
+7 morse  72.8968  1.7  1.47
+8 morse  82.6961  2.0  1.53
+9 class2  1.101  345  -691.89  844.6
+10 morse  82.6961  2.0  1.501
+11 class2  1.101  345  -691.89  844.6
+12 morse  85.5641  2.3  1.42
+13 morse  82.6961  2.0  1.53
+14 class2  1.3768  428.88  -738.235  1114.97
+15 morse  150.0  1.9  1.417
+16 class2  1.0982  372.825  -803.453  894.317
+17 class2  1.3912  447.044  -784.535  886.167
+18 class2  1.0012  465.861  -1066.24  1496.56
+19 class2  0.96  493.848  0  0

@@ -1,0 +1,89 @@
+This is a saved .txt file for the print outs that appear when running auto_morse_bond v1.5 / 31 July 2023
+
+
+
+
+auto_morse_bond settings:
+- min_bond_length:      1.2
+- coeffs2skip:          []
+- alpha_specs:          {'start': 1.0, 'end': 2.5, 'increment': 0.1}
+- alpha_scale:          1.0
+- zero_effected_xterms: False
+- include_type_labels:  False
+
+
+Elements found in system:
+- C
+- H
+
+
+
+-----------------------------------------------------Cluster Analysis----------------------------------------------
+    ##     Size of Cluster            Mass               %Mass Cluster        %Size Cluster       Cluster Formula   
+-------------------------------------------------------------------------------------------------------------------
+    1             3600              14413.38                 100.00               100.00            C1200-H2400     
+
+
+
+Bond length and bond type statistics and info:
+Bond order (BO) will let you know what type of bond the code determine to coeff was from atom types in bond. BO options:
+- single:   1
+- double:   2
+- triple:   3
+- aromatic: 1.5
+
+Parameters (parms) will let you know how the morse parms were found. parms options:
+- class2: coeff left as class2
+- user:   user defined values were inserted
+- code:   dissociation energy was set by the code and alpha was minized by the code
+----------------------------------------------------Bond type bond length statistics----------------------------------------------------
+Bond      Bond Type: atom 1-2 (element,ring,nb)        Bond       Bond    Bond Length   Bond Length     Bond Length     Bond Length  
+id     BO: 1, 2, 3, 0; parms: code, user, class2;     Count        r0      Average       Minimum         Maximum     Standard Deviation
+----------------------------------------------------------------------------------------------------------------------------------------
+1         C,6,5 - C,6,5  BO: 1.5  parms: file          1800       1.42      1.4208       1.4204          1.4215          0.0005     
+2         C,6,5 - H,0,1  BO: N/A  parms: class2        2400       0.65      0.7221       0.7213          0.7230          0.0009     
+
+
+
+----Inputs used for find_rings----
+elements2walk:  ['C', 'H', 'O', 'N', 'S', 'F', 'Si']
+rings2check:  [3, 4, 5, 6]
+fused-rings:  False
+fused2check:  [5, 6]
+
+
+Checked for ring sizes :  [3, 4, 5, 6]
+Total rings found :  600
+0 atoms along a ring seam had to be partitioned amoung the ring
+types (To find accurate %Mass of ring type to entire system).
+Giving preference of partionioning in this order:
+- 6 member ring
+- 5 member ring
+- 7 member ring
+- 4 member ring
+- 3 member ring
+- 8 member ring
+- minimum ring size
+*NOTE: If count of rings exists, but no atoms exist for that ring, this means the
+atoms for that ring were partionted to other rings that the atoms belong to.*
+
+---------------------------------------------------------------------------------------------
+|          Ring            |           Count           |             %Ring count            |
+|          Type            |         of Rings          |            per all rings           |
+---------------------------------------------------------------------------------------------
+|            6             |            600            |               100.00               |
+---------------------------------------------------------------------------------------------
+|    Element      |     natoms      |       Mass       |      %Mass       |     %natoms     |
+---------------------------------------------------------------------------------------------
+|       C         |      1200       |     12013.38     |      83.35       |      33.33      |
+|       H         |        0        |       0.00       |       0.00       |       0.00      |
+|      all        |      1200       |     12013.38     |      83.35       |      33.33      |
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+New combinations of harmonic and morse bond coeffs:
+1 morse  124.0  2.4  1.42  2.84
+2 class2  0.65  250.0  0.0  0.0
